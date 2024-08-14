@@ -37,10 +37,17 @@ class SettingsViewModel @Inject constructor(
     fun updateUiState(event: SettingsEvent) {
         when (event) {
             is SettingsEvent.CheckDarkMode -> {
-                _state.value = _state.value.copy(
-                    isDarkMode = event.isCheck,
-                    isLightMode = !event.isCheck
-                )
+                _state.value = if (event.isCheck){
+                    _state.value.copy(
+                        isDarkMode = event.isCheck,
+                        isLightMode = !event.isCheck
+                    )
+                } else {
+                    _state.value.copy(
+                        isDarkMode = event.isCheck,
+                    )
+                }
+
             }
 
             is SettingsEvent.CheckDownSpeed -> {
@@ -50,10 +57,16 @@ class SettingsViewModel @Inject constructor(
             }
 
             is SettingsEvent.CheckLightMode -> {
-                _state.value = _state.value.copy(
-                    isLightMode = event.isCheck,
-                    isDarkMode = !event.isCheck
-                )
+                _state.value = if (event.isCheck){
+                    _state.value.copy(
+                        isDarkMode = !event.isCheck,
+                        isLightMode = event.isCheck
+                    )
+                } else {
+                    _state.value.copy(
+                        isLightMode = event.isCheck,
+                    )
+                }
             }
 
             is SettingsEvent.CheckUpSpeed -> {
