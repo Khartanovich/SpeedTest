@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SpeedTest</string>
+    <string name="title_test">Test</string>
+    <string name="title_settings">Settings</string>
+    <string name="down_speed">измерять скорость загрузки</string>
+    <string name="down_speed_test">Скорость загрузки</string>
+    <string name="up_speed">измерять скорость отдачи</string>
+    <string name="up_speed_test">Скорость отдачи</string>
+    <string name="set_mode">Установмть тему</string>
+    <string name="dark_mode">темная тема</string>
+    <string name="light_mode">светлая тема</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_mode">Настройки темы</string>
+    <string name="settings_test">Настройки теста</string>
+    <string name="check_speed_network">Измерьте скорость интернета</string>
+    <string name="_0">0</string>
+    <string name="non">o</string>
+    <string name="showToast">Измените настройки</string>
+</resources>

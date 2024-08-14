@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment"
+    android:padding="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="28sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSettingsMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_mode"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginVertical="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dark_mode"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:layout_marginTop="8dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkLightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/light_mode"
+        android:textSize="20sp"
+        android:gravity="start"
+        />
+
+    <TextView
+        android:id="@+id/tvSettingsTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_test"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginVertical="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkDownSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_speed"
+        android:textSize="20sp"
+        android:gravity="start"
+        />
+
+    <CheckBox
+        android:id="@+id/checkUpSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up_speed"
+        android:textSize="20sp"
+        android:gravity="start"
+        />
+
+</LinearLayout>
